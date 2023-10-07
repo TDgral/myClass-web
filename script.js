@@ -17,7 +17,7 @@ window.onscroll = () => {
      })
 }
 navLinks.forEach(navLinks => {
-     navLinks.addEventListenr('click', () => {
+     navLinks.addEventListener('click', () => {
      document.querySelector('.active')?.classList.remove('active');
      navLinks.classList.add('active')
      })
