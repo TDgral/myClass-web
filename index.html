@@ -1,51 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Survey-Form</title>
-  </head>
-  <body>
-    <h1 id="title">Programmer-Survey</h1>
-    <p id="description">
-      this is survey for programmer, whether they like it or not with their job
-    </p>
-    <div class="form">
-      <form value="survey-form" id="survey-form">
-        <div>
-          <label id="name-label">fill with your name!</label>
-          <input type="text" id="name" placeholder="Ethan" required /> 
-          <label id="email-label">fill with your email!</label>
-          <input type="email" id="email" placeholder="ayambakar@gmail.com" required /> 
-          <label id="number-label">how long you worked in IT industry?</label>
-          <input type="number" id="number" min="0" max="100" placeholder="10" /> 
-          <label id="age-label">How old are you?</label>
-          <input type="radio" id="radio" name="age" value="1">15+</input>
-          <input type="radio" id="radio" name="age" value="2">25+</input>
-          <input type="radio" id="radio" name="age" value="3">35+</input>
-          <input type="radio" id="radio" name="age" value="4">50+</input>
-        </div>
-        <label id="header-label">which part in you worked in this IT industry?</label>
-        <select id="dropdown">
-          <option value="part">Frontend Developer</option>
-          <option value="part">Backend Developer</option>
-          <option value="part">Fullstack Developer</option>
-          <option value="part">Data Analysis</option>
-          <option value="part">Data Engineer</option>
-          <option value="part">Data Scientist</option>
-          <option value="part">Machine Learning</option>
-        </select>
-        <label id="type-label">are you a remote developer?</label> 
-        <input type="checkbox" placeholder="Yes" value="Yes"> 
-        <input type="checkbox" placeholder="No" value="No"> 
-        <label id="desc-label">how your feel or your life, after you worked in IT industry?</label>
-        <textarea name="" id="" cols="30" rows="10">
 
-        </textarea> 
-        <button id="submit">Submit</button>
-      </form>
-    </div>
-  </body>
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Logismiko-Profile</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <header>
+          <nav class="list-nav-link">
+               <a href="#home" class="navbar active">Home</a>
+               <a href="#about" class="navbar">About</a>
+               <a href="#projects" class="navbar">Projects</a>
+               <a href="#sosmed" class="navbar">Social Media</a>
+          </nav>
+     </header>
+
+     <section id="home">
+          <div class="content">
+               <h1 class="title-content">Hello.</h1>
+          </div>
+     </section>
+     <section id="about">
+          <div class="title">
+               <h4>About</h4>
+          </div>
+          <div class="content">
+               <div class="container-paragraph">
+                    <p class="paraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis illum,
+                         delectus et quae eos
+                         veritatis nostrum, culpa obcaecati voluptas dolor accusantium iusto illo porro sunt earum
+                         consequatur repellendus necessitatibus itaque nesciunt! Dolores sint nostrum sunt itaque
+                         doloremque quaerat incidunt, odio harum quis iusto, porro commodi nesciunt soluta illum! Quod
+                         aut eius ex accusantium laboriosam deleniti dolorum quis quam! Animi ex mollitia, nam quo
+                         recusandae officia similique corporis voluptatibus tenetur rerum?</p>
+                    <p class="paraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, provident
+                         ducimus!
+                         Accusantium,
+                         vel architecto. Impedit eius enim alias, doloribus dicta id aliquid vitae neque voluptatum est
+                         omnis,</p>
+               </div>
+               <div class="logo">
+                    <img src="https://fastly.picsum.photos/id/401/200/300.jpg?hmac=he-7UMMRVf8kPoCBJEkzRVnGbaQDdCwMS8APgacLgBI"
+                         alt="">
+               </div>
+          </div>
+     </section>
+     <section id="projects">
+          <div class="title">
+               <h4>Projects</h4>
+          </div>
+          <div class="content">
+               <div class="container">
+                    <div class="box">
+                         <h2 class="card-title">Lorem Ipsum</h2>
+                    </div>
+                    <div class="box">
+                         <h2 class="card-title">Short Movie</h2>
+                    </div>
+                    <div class="box">
+                         <h2 class="card-title">Lorem Ipsum. Dolor</h2>
+                    </div>
+                    <div class="box">
+                         <h2 class="card-title">Shorts</h2>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section id="sosmed">
+          <div class="title">
+               <h4>Social Media</h4>
+          </div>
+          <div class="content">
+               <div class="container-sosmed">
+                    <a href="https://www.instagram.com/logismiko.two26/" class="hyperlink">Instagram</a>
+                    <a href="" class="hyperlink">Youtube</a>
+               </div>
+          </div>
+     </section>
+     <script src="script.js"></script>
+</body>
+
 </html>
