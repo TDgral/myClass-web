@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
@@ -36,7 +37,7 @@ nav {
   justify-content: center;
   height: 100vh;
   display: flex;
-  font-size: 18px;
+  font-size: 14px;
   z-index: 1;
   top: 0;
 }
@@ -44,13 +45,22 @@ nav {
   color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   font-family: var(--main-font);
-  font-size: 20px;
   padding: 12px;
   font-weight: 600;
 }
-.active {
-  color: rgba(0, 0, 0, 1);
+.navbar::before {
+  font-size: 16px;
 }
+.navbar:hover {
+  transition: 0.6s ease-in-out;
+  font-size: 16px;
+}
+.active {
+  transition: 0.7s ease-in-out;
+  color: rgba(0, 0, 0, 1);
+  font-size: 16px;
+}
+
 section {
   width: 100vw;
   height: 100vh;
@@ -238,9 +248,5 @@ h2 {
     height: 410px;
     font-size: 32px;
     margin: 19px 12px;
-  }
-  .container-sosmed {
-  }
-  header {
   }
 }
